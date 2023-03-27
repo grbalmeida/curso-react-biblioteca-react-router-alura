@@ -1,4 +1,3 @@
-import Menu from 'components/Menu';
 import cardapio from 'data/cardapio.json';
 import styles from './Inicio.module.scss';
 
@@ -8,7 +7,6 @@ export default function Inicio() {
 
   return (
     <section>
-      <Menu />
       <h3 className={styles.titulo}>
         Recomendações da cozinha
       </h3>
@@ -19,7 +17,7 @@ export default function Inicio() {
               <img src={item.photo} alt={item.title} />
             </div>
             <button className={styles.recomendado__botao}>
-                Ver mais
+              Ver mais
             </button>
           </div>
         ))}
